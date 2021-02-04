@@ -1,11 +1,8 @@
-- name: iris-classifier
+- name: cortex-ml-bgc
   kind: RealtimeAPI
   predictor:
     type: python
     path: predictor.py
-    config:
-      bucket: cortex-examples
-      key: sklearn/iris-classifier/model.pkl
   monitoring:
     model_type: classification
   compute:
